@@ -1,0 +1,9 @@
+# Your archive and your scores stay on your machine.
+out/
+*.zip
+*.csv
+tweets.js
+tweet.js
+direct-messages*.js
+__pycache__/
+*.pyc

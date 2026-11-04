@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Net-positive tweets</title>
+<meta name="description" content="Compare how net positive or net negative people's tweets are, year by year.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Net-positive tweets</h1>
+  <p>An AI model scored each tweet from -5 to +5 on one question: compared with the tweet never being posted, did it leave things better or worse? Add summary files to compare people.</p>
+  <p><a href="https://github.com/Michael-Andrzejewski/net-positive-tweets#score-your-own-tweets">Score your own tweets</a> to make a summary file.</p>
+
+  <div class="controls">
+    <label class="button" for="file">Add summary.json files</label>
+    <input id="file" class="visually-hidden" type="file" accept=".json,application/json" multiple>
+    <span class="hint">or drop them on this page</span>
+  </div>
+  <p class="hint">Your files stay in this browser. The page loads one chart library, and its security policy blocks every other network request.</p>
+  <p id="errors" class="errors" role="alert"></p>
+
+  <section>
+    <h2>Totals</h2>
+    <div class="table-wrap"><table id="totals"></table></div>
+    <p class="hint">Neutral tweets score 0, so they add no points. The page counts them as tweets instead.</p>
+    <ul id="warnings" class="warnings"></ul>
+  </section>
+
+  <section>
+    <h2>Share of tweets</h2>
+    <div class="legend" id="share-legend"></div>
+    <div id="share"></div>
+  </section>
+
+  <section>
+    <h2>Average score per tweet</h2>
+    <div class="legend" id="average-legend"></div>
+    <div class="chart tall"><canvas id="average" role="img" aria-label="Line chart of average tweet score per year for each person. The totals table above has the summary numbers."></canvas></div>
+  </section>
+
+  <section>
+    <h2>By year</h2>
+    <div class="segmented" role="group" aria-label="What the yearly charts show">
+      <button type="button" data-view="points" aria-pressed="true">Points</button>
+      <button type="button" data-view="tweets" aria-pressed="false">Tweets</button>
+      <button type="button" data-view="share" aria-pressed="false">Share of tweets</button>
+    </div>
+    <div class="legend" id="yearly-legend"></div>
+    <div id="yearly"></div>
+  </section>
+
+  <p class="hint footnote">These scores are one AI model's estimates from tweet text. They do not measure a tweet's real effects, and they are not a verdict on a person. Compare runs only when they used the same model and rubric. Summary files are self-reported, so anyone can edit theirs.</p>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="examples.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

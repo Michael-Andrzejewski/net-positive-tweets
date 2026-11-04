@@ -1,0 +1,16 @@
+[
+  {"id": 1, "reference": 3, "text": "I ran the same 200 prompts through three chatbots and logged every refusal. One refused medical questions four times as often as the others. Data and code are in the next tweet. Please check my method. I may have missed something."},
+  {"id": 2, "reference": 2, "text": "If your build hangs on Windows, delete the cache folder first. That fixed it for me. The 2.1 release notes also mention this bug."},
+  {"id": 3, "reference": 1, "text": "Hope everyone has a good weekend!"},
+  {"id": 4, "reference": 0, "text": "Monday again"},
+  {"id": 5, "reference": -1, "text": "This app has gone downhill. Nothing good gets posted here anymore."},
+  {"id": 6, "reference": -2, "text": "Anyone who believes this has no idea what they are talking about. Log off and read a book for once."},
+  {"id": 7, "reference": -3, "text": "My old thesis advisor is a fraud who faked all of her results. Everyone in the department knows it. Stop citing her."},
+  {"id": 8, "reference": 2, "text": "I made a small free tool that turns photos of receipts into a spreadsheet. Link in reply. It is rough, so tell me what breaks."},
+  {"id": 9, "reference": -1, "text": "Things are about to get really bad. You'll see."},
+  {"id": 10, "reference": 1, "text": "Does anyone know a good dentist near downtown?"},
+  {"id": 11, "reference": 3, "text": "What helped most with my dad's dementia: keep the same daily routine, label cupboards with pictures, and accept respite care early. I waited two years on that last one and I wish I had not. Happy to answer questions from anyone going through this."},
+  {"id": 12, "reference": 0, "text": "Got a new phone case"},
+  {"id": 13, "reference": -3, "text": "The new flu shot contains a tracking chip. This is a documented fact."},
+  {"id": 14, "reference": 2, "text": "I disagree with today's popular take. That study had 40 people and no control group, so it can't show the drug works."}
+]
